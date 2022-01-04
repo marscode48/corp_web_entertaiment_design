@@ -34,7 +34,7 @@ a {
 //   margin-bottom: 16px !important;
 // }
 .mb-lg {
-  margin-bottom: 80px !important;
+  margin-bottom: 80px;
 }
 // .pb-sm {
 //   padding-bottom: 16px !important;
@@ -93,10 +93,7 @@ a {
 
   &__logo {
     margin: 8px 0;
-
-    & img {
-      width: 80px
-    }
+    width: 80px;
   }
 
   &__nav {
@@ -279,8 +276,6 @@ a {
   &__logo {
     margin:8px 0 10px 0;
     width: 80px;
-    img {
-    }
   }
 
   &__info {
