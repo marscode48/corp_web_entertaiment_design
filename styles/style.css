@@ -4,6 +4,270 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  background-color: #F0F0F0;
+  line-height: normal;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.font-sm, body, .section-title .ja {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lg, .section-title .en {
+  font-size: 36px;
+}
+
+.mb-lg, .main__visual, .main #news, .main #about, .main #business {
+  margin-bottom: 80px !important;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1032px;
+  padding: 0 16px;
+}
+
+.section-title {
+  margin-bottom: 34px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.section-title .en {
+  display: block;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+.section-title .ja {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.section-title::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  display: block;
+  background-color: #000000;
+}
+
+.flex, .header__flex, .header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin: 8px 0;
+}
+
+.header__logo img {
+  width: 80px;
+}
+
+.header__nav ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav ul li {
+  margin-right: 30px;
+}
+
+.header__nav ul li:last-child {
+  margin-right: 0;
+}
+
+.header__nav ul li a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__contact {
+  display: none;
+}
+
+.main__visual img {
+  height: calc(100vh - 80px);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__news {
+  padding: 0;
+  margin: 0;
+}
+
+.main__news li {
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.main__news li:last-child {
+  margin-bottom: 0;
+}
+
+.main__news li p {
+  margin: 0;
+}
+
+.main__time {
+  margin-bottom: 16px;
+}
+
+.main__time span {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-left: 10px;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.main__about-image {
+  margin-bottom: 30px;
+}
+
+.main__about-image img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__about-text {
+  padding: 0 16px;
+}
+
+.main__about-text p {
+  margin: 0;
+  line-height: 2.2;
+}
+
+.main__left {
+  margin-bottom: 30px;
+}
+
+.main__item {
+  margin-bottom: 30px;
+}
+
+.main__item:last-child {
+  margin-bottom: 0;
+}
+
+.main__item-title {
+  margin: 0 0 10px 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.main__item-title::before {
+  content: "";
+  width: 8px;
+  height: 1px;
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: -18px;
+}
+
+.main__company-text {
+  background-color: #FFFFFF;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.main__info {
+  margin-bottom: 0;
+}
+
+.main__info dt {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.main__info dt:first-of-type {
+  margin-top: 0;
+}
+
+.main__info dd {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 14px;
+}
+
+.main__company-image img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+}
+
+.footer__flex {
+  padding: 40px 0;
+}
+
+.footer__logo {
+  margin: 8px 0 10px 0;
+  width: 80px;
+}
+
+.footer__info p {
+  margin-bottom: 0;
+}
+
+.footer__copyright {
+  font-size: 10px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
