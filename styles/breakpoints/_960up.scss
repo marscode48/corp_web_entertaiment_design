@@ -3,3 +3,176 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+.section-title {
+  margin-bottom: 50px;
+
+  .ja {
+    margin-bottom: 36px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__flex {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 100px;
+    margin: 0 60px 0 0;
+  }
+  
+  &__contact {
+    display: inline-block;
+    color: $cWhite;
+    background-color: $cBlack;
+    height: 80px;
+    line-height: 80px;
+    width: 200px;
+    text-align: center;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #333;
+      color: $cWhite;
+      text-decoration: none;
+    }
+  }
+}
+
+.main {
+
+  &__visual {
+    margin-bottom: 120px;
+  }
+
+  #news {
+    margin-bottom: 120px;
+  }
+
+  &__news {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      width: calc(100%/3);
+      padding: 10px 20px;
+      margin: 0;
+      border-right: 1px solid $cBlack;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+  }
+
+  #about {
+    margin-bottom: 120px;
+    display: flex;
+  }
+
+  &__about-image {
+    margin-bottom: 0;
+    width: 55%;
+
+    img {
+      height: 400px;
+    }
+  }
+
+  &__about-text {
+    width: 45%;
+    padding: 180px 5% 0 5%;
+  }
+
+  #business {
+    margin-bottom: 120px;
+  }
+  
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+  &__left {
+    width: 46%;
+    margin-top: 100px;
+  }
+
+  &__right {
+    width: 46%;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  #company {
+    display: flex;
+    position: relative;
+    height: 750px;
+  }
+
+  &__company-text {
+    width: 55%;
+    padding: 100px 8% 100px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+
+    & dt {
+      width: 20%;
+      margin-top: 10px;
+    }
+    
+    & dd {
+      width: 80%;
+      margin-top: 10px;
+      padding: 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+    }
+    & .main__add {
+      margin-left: 20%;
+    }
+  }
+
+  &__company-image {
+    width: 53%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+  }
+}
+
+.footer {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 100px;
+    margin: 0;
+  }
+}
+
